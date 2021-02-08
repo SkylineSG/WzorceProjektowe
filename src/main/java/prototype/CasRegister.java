@@ -6,13 +6,19 @@ import java.util.Set;
 public class CasRegister extends Prototype {
     private String name;
     private Set<Basket> lists = new HashSet<>();
+    private Basket[] baskets;
 
-    public CasRegister(String name) {
+    public CasRegister(String name,Basket... baskets) {
         this.name = name;
+        this.baskets = baskets;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Basket[] getBaskets(Product[] product) {
+        return baskets;
     }
 
     public String getName() {

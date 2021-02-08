@@ -3,15 +3,19 @@ package prototype;
 public class Product {
 
     final private String name;
-   // final private double price;
+    final private double price;
 
-    public Product(final String name) {
+    public Product(final String name,final double price) {
         this.name = name;
-      //  this.price = price;
+        this.price = price;
     }
 
     public String getName() {
         return name;
+    }
+
+    public double getPrice() {
+        return price;
     }
 
     @Override
